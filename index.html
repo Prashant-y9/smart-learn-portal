@@ -1,5 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
+    <!-- ================= HEADER START ================= -->
+<header class="main-header">
+    <div class="logo">Smartlearn Portal</div>
+
+    <nav class="nav-links">
+        <a href="#" class="active">Home</a>
+        <a href="#">Notices</a>
+        <a href="#">Assignments</a>
+        <a href="#">Timetable</a>
+        <a href="#">Contact</a>
+    </nav>
+
+    <!-- Hamburger menu for mobile -->
+    <div class="menu-btn" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+</header>
+
+<!-- Mobile Dropdown -->
+<div class="mobile-menu" id="mobileMenu">
+    <a href="#" class="active">Home</a>
+    <a href="#">Notices</a>
+    <a href="#">Assignments</a>
+    <a href="#">Timetable</a>
+    <a href="#">Contact</a>
+</div>
+<!-- ================= HEADER END ================= -->
+
 
 <head>
     <meta charset="UTF-8">
@@ -18,11 +48,7 @@
             <div class="main_hero_left">
                 <div class="hero_text_main">
                     <h2>Smart Learn Portal</h2>
-                    <p>Access a comprehensive collection of previous exam papers for various courses at Poornima
-                        University.
-                        Whether you're a student preparing for exams or a faculty member looking for reference
-                        materials,
-                        our portal provides easy access to past papers to aid in your academic journey.</p>
+                    <p>Smart Learn Portal is a centralized digital platform where the Class Representative can easily upload notes, assignments, timetables, and announcements, and students can access them anytime. It improves classroom communication by keeping all important updates organized in one place. The portal also includes an AI assistant, SmartAI, which helps students with summaries, explanations, and study support. Overall, it ensures that the entire class stays connected, informed, and well-managed.</p>
                 </div>
 
             </div>
@@ -31,6 +57,9 @@
                     <img src="./nishant.svg" alt="hero_image">
                 </div>
             </div>
+            
+
+            
 
 
 
@@ -1450,9 +1479,222 @@
         </div>
     </section>
 
+
+   <section>
+   </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     <footer>
-        <h5>DEVELOPED BY PRASHANT</h5>
     </footer>
 </body>
 
 </html>
+<section>
+    <div class="feature-box">
+  <button class="toggle-btn">View Notes</button>
+  <div class="toggle-content">
+    <p>📘 PDF Notes: <a href="#">Download</a></p>
+    <p>📚 Assignments: <a href="#">Open</a></p>
+  </div>
+</div>
+<section class="notice-board">
+    <h2 class="notice-title">📢 Important Announcements</h2>
+    <div class="announcement-card">
+        <div class="glass-card">
+
+    <div class="notice-container">
+
+        <!-- Notice 1 -->
+        <div class="notice-card">
+            <div class="notice-header">
+                <span class="notice-tag important">Important</span>
+                <span class="notice-date" data-date></span>
+            </div>
+            <h3 class="notice-heading">End sem Exam Schedule Released</h3>
+            <p class="notice-text">
+                The Mid Term Exam schedule for all BTech branches has been uploaded.
+                Kindly download the PDF and check your subject wise dates.
+            </p>
+            <a href="#" class="notice-btn">View Notice</a>
+        </div>
+
+        <!-- Notice 2 -->
+        <div class="notice-card">
+            <div class="notice-header">
+                <span class="notice-tag">General</span>
+                <span class="notice-date" data-date></span>
+            </div>
+            <h3 class="notice-heading">C Programming Assignment Deadline</h3>
+            <p class="notice-text">
+                The deadline for the Unit-2 C Programming assignment is extended
+                to Friday. Submit your work before 5:00 PM.
+            </p>
+            <a href="#" class="notice-btn">Check Details</a>
+        </div>
+
+        <!-- Notice 3 -->
+        <div class="notice-card">
+            <div class="notice-header">
+                <span class="notice-tag">Update</span>
+                <span class="notice-date" data-date></span>
+            </div>
+            <h3 class="notice-heading">Class Timetable Updated</h3>
+            <p class="notice-text">
+                A new timetable for the 2024-25 session has been published.
+                Make sure to follow the updated routine from Monday.
+            </p>
+            <a href="#" class="notice-btn">Download PDF</a>
+        </div>
+
+    </div>
+</section>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login / Signup</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="wrapper">
+
+        <div class="form-container">
+
+            <!-- Buttons -->
+            <div class="toggle-buttons">
+                <button id="loginBtn" class="active">Login</button>
+                <button id="signupBtn">Signup</button>
+            </div>
+
+            <!-- LOGIN FORM -->
+            <form id="loginForm" class="form show">
+                <h2>Welcome Back</h2>
+
+                <input type="email" placeholder="Email" required>
+                <div class="password-box">
+                    <input type="password" id="loginPass" placeholder="Password" required>
+                    <span class="eye" onclick="togglePass('loginPass')">👁️</span>
+                </div>
+
+                <button class="submit-btn">Login</button>
+
+                <p class="switch-text">Don't have an account? <span id="goSignup">Signup</span></p>
+            </form>
+<section></section>
+            <!-- SIGNUP FORM -->
+            <form id="signupForm" class="form">
+                <h2>Create Account</h2>
+
+                <input type="text" placeholder="Full Name" required>
+                <input type="email" placeholder="Email" required>
+
+                <div class="password-box">
+                    <input type="password" id="signupPass" placeholder="Password" required>
+                    <span class="eye" onclick="togglePass('signupPass')">👁️</span>
+                </div>
+
+                <button class="submit-btn">Signup</button>
+
+                <p class="switch-text">Already have an account? <span id="goLogin">Login</span></p>
+            </form>
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+</section>
+<header class="auth-header">
+    <div class="auth-logo">SmartLearn Portal</div>
+    <nav class="auth-nav">
+        <a href="index.html">Home</a>
+        <a href="#">Help</a>
+    </nav>
+</header>
+<body class="login-page">
+
+<header class="auth-header">
+    <div class="auth-logo">SmartLearn Portal</div>
+    <nav class="auth-nav">
+        <a href="index.html">Home</a>
+        <a href="#">Help</a>
+    </nav>
+</header>
+
+<div class="wrapper">
+    <!-- your login/signup UI here -->
+</div>
+
+</body>
+<script src="https://unpkg.com/feather-icons"></script>
+<script> feather.replace(); </script>
+<i data-feather="bell"></i>
+<style>
+.hero-animate {
+  background: linear-gradient(120deg, #dbeafe, #eff6ff, #f0f9ff);
+  background-size: 200% 200%;
+  animation: move 6s infinite;
+}
+@keyframes move {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+</style>
+<section class="hero-animate">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+/* Mobile view (screen < 600px) */
+@media (max-width: 600px) {
+
+  /* Cards full width */
+  .glass-card, 
+  .announcement-card, 
+  .notice-card, 
+  .card {
+    width: 100% !important;
+    margin: 10px 0 !important;
